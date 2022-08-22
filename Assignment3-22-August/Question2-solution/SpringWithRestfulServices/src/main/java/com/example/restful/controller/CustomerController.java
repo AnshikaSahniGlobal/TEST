@@ -64,7 +64,7 @@ public class CustomerController
 
  @RequestMapping("/customer/{customerid}")
 
- public Optional<Customer> getAlien(@PathVariable("customerid")int customerid)
+ public Optional<Customer> getCustomer(@PathVariable("customerid")int customerid)
 
  {
 
@@ -74,7 +74,7 @@ public class CustomerController
 
  @DeleteMapping("/customer/{customerid}")
 
- public String deleteAlien(@PathVariable int customerid)
+ public String deleteCustomer(@PathVariable int customerid)
 
  {
 
@@ -88,7 +88,7 @@ public class CustomerController
 
  @PutMapping(path="/customer",consumes= {"application/json"})
 
- public Customer saveOrUpdateAlien(@RequestBody Customer customer)
+ public Customer saveOrUpdateCustomer(@RequestBody Customer customer)
 
  {
 
